@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="border">
+            <div class="out"></div>
+                <h3>Answer:</h3>
+                <input class="answer"></input>
+                <div class="button">  
+                    <a href=""   onclick="have();"  class="btn"><button class="btn">Give an answer</button></a>
+                    <!--<a href=""  onclick="have();"  class="btn2">Дать ответ!</a>-->
+               </div>    
+        </div>
+    <script src="js/script.js"></script>
+    <script>
+        out.textContent = data[0][13]
+    function have() {
+        answer = input.value;
+        localStorage.setItem(data[0][13], answer)
+        input.value = '';
+        window.location.href = 'quest15.html';
+    }
+    </script>
+</body>
+</html>
